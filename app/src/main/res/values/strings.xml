@@ -8,18 +8,29 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- menu -->
     <string name="menu_home">Home</string>
     <string name="menu_calendar">달력</string>
     <string name="menu_food_course">푸디 투어</string>
     <string name="menu_cafe">카페 투어</string>
     <string name="menu_mytrip">My Trip</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_checklist">체크리스트</string>
+    <string name="menu_map">지도</string>
+    <string name="menu_culture">문화 / 관광 한눈에 보기</string>
+    <string name="menu_restaurant">음식점 / 카페 한눈에 보기</string>
+    <string name="menu_publicTraffic">대중교통 한눈에 보기</string>
+    <string name="menu_hospital">의료시설 한눈에 보기</string>
+    <string name="menu_course">코스</string>
+    <string name="menu_1dayTravel">당일치기</string>
+    <string name="menu_2daysTravel">1박 2일 여행</string>
+    <string name="menu_3daysTravel">2박 3일 여행</string>
 
     <string name="home_second">Home Second</string>
 
     <!-- Home -->
-    <string name="Feature">부산 명소</string>
-    <string name="Feature_content">부산에서만 볼 수 있는\n최상의 아름다움</string>
+    <string name="HotSpot">부산 명소</string>
+    <string name="HotSpot_content">부산에서만 만날 수 있는\n최상의 아름다움</string>
+    <string name="PopularFood">부산에 왔으면 부산 음식은 먹어줘야지~</string>
 
     <string name="today">날짜</string>
 
@@ -27,6 +38,8 @@
     <string name="icon_Culture">문화/관광</string>
     <string name="icon_Traffic">대중교통</string>
     <string name="icon_Hospital">의료시설</string>
+
+    <string name="test">test</string>
 
     <!--로그인-->
     <string name="login">Login</string>

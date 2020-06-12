@@ -116,10 +116,15 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_cafe:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CafeFragment()).commit();
+                break;
 
             case R.id.nav_checklist:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChecklistFragment()).commit();
+                break;
+
+            case R.id.nav_mytrip:
+                break;
 
             default:
                 break;

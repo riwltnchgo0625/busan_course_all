@@ -54,7 +54,7 @@
                         android:layout_margin="10dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="50dp"
-                        android:text="@string/Feature"
+                        android:text="@string/HotSpot"
                         android:textAllCaps="true"
                         android:textColor="@android:color/black"
                         android:textSize="25sp" />
@@ -63,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="@string/Feature_content" />
+                        android:text="@string/HotSpot_content" />
 
                 </LinearLayout>
 
@@ -151,8 +151,8 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_centerInParent="true"
-                            android:src="@drawable/ic_food"
-                            android:contentDescription="@string/FoodImage" />
+                            android:contentDescription="@string/FoodImage"
+                            android:src="@drawable/ic_food" />
 
                     </RelativeLayout>
 
@@ -257,7 +257,8 @@
                 android:orientation="vertical"
                 android:paddingStart="20dp"
                 android:paddingTop="20dp"
-                android:paddingBottom="20dp">
+                android:paddingBottom="20dp"
+                tools:ignore="RtlSymmetry">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -267,11 +268,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="most"
+                        android:text="@string/PopularFood"
                         android:textAllCaps="true"
                         android:textColor="@android:color/black"
                         android:textSize="20sp" />
-
+                    <!--
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -279,7 +280,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="15dp"
                         android:text="aaaaa" />
-
+                    -->
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView

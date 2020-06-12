@@ -4,30 +4,27 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/menu_home" />
-
     </group>
 
-    <item android:title="체크리스트">
+    <item android:title="@string/menu_checklist">
         <menu>
             <item
                 android:id="@+id/nav_checklist"
                 android:icon="@drawable/ic_check_black_24dp"
-                android:title="체크리스트" />
+                android:title="@string/menu_checklist" />
         </menu>
     </item>
 
-
-    <item android:title="My Trip">
+    <item android:title="@string/menu_mytrip">
         <menu>
             <item
                 android:id="@+id/nav_mytrip"
                 android:icon="@drawable/ic_mode_edit_black_24dp"
-                android:title="My Trip" />
+                android:title="@string/menu_mytrip" />
         </menu>
     </item>
 
@@ -40,50 +37,47 @@
         </menu>
     </item>
 
-
-
-    <item android:title="지도">
-
+    <item android:title="@string/menu_map">
         <menu>
             <item
                 android:id="@+id/nav_culture"
                 android:checkable="true"
                 android:icon="@drawable/ic_map"
-                android:title="문화 / 관광 한눈에 보기" />
+                android:title="@string/menu_culture" />
             <item
                 android:id="@+id/nav_eat"
                 android:checkable="true"
                 android:icon="@drawable/ic_map"
-                android:title="음식점 / 카페 한눈에 보기" />
+                android:title="@string/menu_restaurant" />
             <item
                 android:id="@+id/nav_publicTrans"
                 android:checkable="true"
                 android:icon="@drawable/ic_map"
-                android:title="대중교통 한눈에 보기" />
+                android:title="@string/menu_publicTraffic" />
             <item
                 android:id="@+id/nav_medical"
                 android:checkable="true"
                 android:icon="@drawable/ic_map"
-                android:title="의료시설 한눈에 보기" />
+                android:title="@string/menu_hospital" />
         </menu>
-
     </item>
 
-    <item android:title="코스">
+    <item android:title="@string/menu_course">
         <menu>
             <item
                 android:id="@+id/nav_daytrip"
                 android:icon="@drawable/ic_edit_location"
-                android:title="당일여행" />
+                android:title="@string/menu_1dayTravel" />
+
+            <item
+                android:id="@+id/nav_one_night_two_days"
+                android:icon="@drawable/ic_edit_location"
+                android:title="@string/menu_2daysTravel" />
 
             <item
                 android:id="@+id/nav_two_three"
                 android:icon="@drawable/ic_edit_location"
-                android:title="2박 3일여행" />
-            <item
-                android:id="@+id/nav_one_night_two_days"
-                android:icon="@drawable/ic_edit_location"
-                android:title="1박 2일 여행" />
+                android:title="@string/menu_3daysTravel" />
 
             <item
                 android:id="@+id/nav_food_course"

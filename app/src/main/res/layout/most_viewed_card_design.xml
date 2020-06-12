@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
     app:cardCornerRadius="2dp"
-    app:cardElevation="8dp"
-    android:layout_margin="10dp">
-
+    app:cardElevation="8dp">
 
     <RelativeLayout
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="10dp">
 
@@ -17,40 +16,38 @@
             android:id="@+id/mv_image"
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:src="@drawable/cafe1_1"
-            android:scaleType="centerCrop"/>
+            android:contentDescription="@string/test"
+            android:scaleType="centerCrop"
+            android:src="@android:color/darker_gray" />
 
         <TextView
             android:id="@+id/mv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="카페1"
-            android:lineHeight="20dp"
             android:layout_marginStart="10dp"
-            android:layout_toRightOf="@+id/mv_image"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"/>
+            android:layout_toEndOf="@+id/mv_image"
+            android:lineHeight="20dp"
+            android:text="@android:string/untitled"
+            android:textSize="20sp" />
 
         <RatingBar
             android:id="@+id/mv_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_below="@id/mv_title"
-            android:layout_toRightOf="@id/mv_image"
-            android:layout_marginLeft="10dp"
-            android:rating="4"/>
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/mv_image"
+            android:rating="5" />
 
         <TextView
             android:id="@+id/mv_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="카페케페카ㅓ패ㅓ키ㅏㅓ"
             android:layout_below="@id/mv_rating"
-            android:layout_toRightOf="@id/mv_image"
-            android:padding="10dp"/>
-
-
+            android:layout_toEndOf="@id/mv_image"
+            android:padding="10dp"
+            android:text="@android:string/untitled" />
 
     </RelativeLayout>
 

@@ -219,10 +219,14 @@ public class HomeFragment extends Fragment {
         mostViewdRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.cafe3_9, "dddd", "ddddddddd's"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.cafe2_1, "Edenrobe", "dddddddccccc"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.cafe2_2, "J.", "ddddddd"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.cafe2_3, "Walmart", "sdkjoqjk"));
+        mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191226181410757_wufrotr",
+                "밀면", "묘하게 중독되는 부산 여름의 맛!"));
+        mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200102184731969_oen",
+                "회", "마! 부산은 회 아이가~"));
+        mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191230195412058_oen",
+                "동래파전", "과거 임금님이 드셨다는 음식인데 안 먹어볼 수 없지"));
+        mostViewedLocations.add(new MostViewedHelperClass("https://cdn.pixabay.com/photo/2018/09/10/09/21/haejangguk-3666599_960_720.jpg",
+                "돼지국밥", "부산 돼지국밥을 빼고 국밥을 논하지 마라.(진지)"));
 
         RecyclerView.Adapter adapter = new MostViewedAdapter(mostViewedLocations);
         mostViewdRecycler.setAdapter(adapter);

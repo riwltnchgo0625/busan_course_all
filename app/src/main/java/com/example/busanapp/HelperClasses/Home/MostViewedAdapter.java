@@ -9,12 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.busanapp.R;
 
 import java.util.ArrayList;
 
 public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.MostViewedViewHolder> {
-    ArrayList<MostViewedHelperClass> mostViewedLocations;
+    private ArrayList<MostViewedHelperClass> mostViewedLocations;
 
     public MostViewedAdapter(ArrayList<MostViewedHelperClass> mostViewedLocations) {
         this.mostViewedLocations = mostViewedLocations;
@@ -24,17 +25,17 @@ public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.Mo
     @Override
     public MostViewedViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.most_viewed_card_design, parent, false);
-        MostViewedViewHolder mostViewedViewHolder = new MostViewedViewHolder(view);
-        return mostViewedViewHolder;
+        return new MostViewedViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MostViewedViewHolder holder, int position) {
         MostViewedHelperClass helperClass = mostViewedLocations.get(position);
 
-        holder.imageView.setImageResource(helperClass.getImageView());
-        holder.textView.setText(helperClass.getTextView());
-        holder.textView.setText(helperClass.getDescription());
+//      holder.imageView.setImageResource(helperClass.getImageView());
+        Glide.with(holder.itemView.getContext()).load(helperClass.getUrl()).into(holder.imageView);
+        holder.titleText.setText(helperClass.getTitle());
+        holder.descText.setText(helperClass.getDescription());
     }
 
     @Override
@@ -42,17 +43,16 @@ public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.Mo
         return mostViewedLocations.size();
     }
 
-    public static class MostViewedViewHolder extends RecyclerView.ViewHolder {
-
+    static class MostViewedViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
-        TextView textView;
+        TextView titleText, descText;
 
-        public MostViewedViewHolder(@NonNull View itemView) {
+        MostViewedViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.mv_image);
-            textView = itemView.findViewById(R.id.mv_title);
-            textView = itemView.findViewById(R.id.mv_desc);
+            titleText = itemView.findViewById(R.id.mv_title);
+            descText = itemView.findViewById(R.id.mv_desc);
         }
     }
 }

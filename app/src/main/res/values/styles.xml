@@ -68,5 +68,7 @@
         <item name="android:isScrollContainer">true</item>
     </style>
 
-
+    <style name="MyItemFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/abfont</item>
+    </style>
 </resources>
