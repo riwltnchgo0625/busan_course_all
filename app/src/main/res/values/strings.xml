@@ -18,8 +18,8 @@
     <string name="home_second">Home Second</string>
 
     <!-- Home -->
-    <string name="FirstCategory">부산 명소</string>
-    <string name="FirstCategory_content">부산에서만 볼 수 있는\n최상의 아름다움</string>
+    <string name="Feature">부산 명소</string>
+    <string name="Feature_content">부산에서만 볼 수 있는\n최상의 아름다움</string>
 
     <string name="today">날짜</string>
 
