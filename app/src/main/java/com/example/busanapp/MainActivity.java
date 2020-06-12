@@ -15,19 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
 
-
         handler = new Handler();
-        runnable = new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this, LoadingActivity.class));
+        runnable = () -> {
+            startActivity(new Intent(MainActivity.this, LoadingActivity.class));
 
-                finish();
-            }
+            finish();
         };
         //3초
         handler.postDelayed(runnable,2000);
-
     }
 
     @Override
@@ -36,7 +31,4 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
 
     }
-
-
-
 }

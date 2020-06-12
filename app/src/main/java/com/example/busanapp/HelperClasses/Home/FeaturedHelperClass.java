@@ -1,17 +1,22 @@
 package com.example.busanapp.HelperClasses.Home;
 
 public class FeaturedHelperClass {
-    int image;
-    String title, description;
+    //  private int image;
+    private String Url, title, description;
 
-    public FeaturedHelperClass(int image, String title, String description) {
-        this.image = image;
+    public FeaturedHelperClass(/*int image,*/String Url, String title, String description) {
+//      this.image = image;
+        this.Url = Url;
         this.title = title;
         this.description = description;
     }
-
+    /*
     public int getImage() {
         return image;
+    }
+    */
+    public String getUrl() {
+        return Url;
     }
 
     public String getTitle() {

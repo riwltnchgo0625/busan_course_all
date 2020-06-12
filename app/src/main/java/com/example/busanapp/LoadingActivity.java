@@ -1,5 +1,4 @@
 package com.example.busanapp;
-// 편의시설 네비 드로워 어플
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -33,9 +32,8 @@ import noman.googleplaces.Place;
 import noman.googleplaces.PlacesException;
 import noman.googleplaces.PlacesListener;
 
-
-public class LoadingActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ActivityCompat.OnRequestPermissionsResultCallback, PlacesListener {
-
+public class LoadingActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
+        ActivityCompat.OnRequestPermissionsResultCallback, PlacesListener {
     private DrawerLayout drawer;
 
     @Override
@@ -60,7 +58,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                     new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
-
     }
 
     @Override
@@ -80,14 +77,17 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CultureFragment()).commit();
                 break;
+
             case R.id.nav_eat:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new EatFragment()).commit();
                 break;
+
             case R.id.nav_publicTrans:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new PublicTransFragment()).commit();
                 break;
+
             case R.id.nav_medical:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MedicalFragment()).commit();
@@ -97,10 +97,12 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new DaytripFragment()).commit();
                 break;
+
             case R.id.nav_two_three:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new TwoThreetripFragment()).commit();
                 break;
+
             case R.id.nav_one_night_two_days:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new OneTwoFragment()).commit();
@@ -115,7 +117,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CafeFragment()).commit();
 
-
             case R.id.nav_checklist:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChecklistFragment()).commit();
@@ -126,7 +127,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
     @Override
     public void onBackPressed() {
@@ -151,6 +151,5 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
 
     @Override
     public void onPlacesFinished() {
-
     }
 }
