@@ -240,11 +240,16 @@ public class HomeFragment extends Fragment {
         GradientDrawable gradient4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffb8d7f5, 0xffb8d7f5});
 
         ArrayList<CategoriesHelperClass> categoriesHelperClasses = new ArrayList<>();
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.cafe1_3, "a", "Education"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.cafe1_8, "b", "Education"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.cafe1_5, "c", "Education"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.cafe1_4, "d", "Education"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.cafe1_9, "e", "Education"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/07/10/1653/Park-Hyatt-Busan-P822-Ocean-View-King-High-Floor.jpg/Park-Hyatt-Busan-P822-Ocean-View-King-High-Floor.16x9.jpg?imwidth=1280",
+                "파크하얏트 부산(해운대)"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://hilton.co.kr/static/upload/hotel_main_20171025171832_lg_pc.jpg",
+                "힐튼 부산 호텔"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.busanparadisehotel.co.kr/upload/201904/1554963881483.jpg",
+                "파라다이스 호텔 부산(해운대)"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.lottehotel.com/content/dam/lotte-hotel/lotte/busan/accommodation/standard/deluxe-room/180829-3-2000-acc-busan-hotel.jpg.thumb.1024.1024.jpg",
+                "롯데호텔 부산(서면)"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://twcb.echosunhotel.com/revolution/content/fileImage.do?fileId=19303",
+                "부산 웨스틴조선호텔(해운대)"));
 
         categoriesRecycler.setHasFixedSize(true);
         RecyclerView.Adapter adapter = new CategoriesAdapter(categoriesHelperClasses);

@@ -1,23 +1,32 @@
 package com.example.busanapp.HelperClasses.Home;
 
 public class CategoriesHelperClass {
-    int image;
-    String title, gradient;
+    //  int image;
+    private String Url, title;
+//  String gradient;
 
-    public CategoriesHelperClass(int image, String title, String gradient) {
-        this.image = image;
+    public CategoriesHelperClass(/* int image */String Url, String title/*, String gradient*/) {
+//      this.image = image;
+        this.Url = Url;
         this.title = title;
-        this.gradient = gradient;
+//      this.gradient = gradient;
     }
 
+    /*
     public int getImage() {
         return image;
     }
-
-    public String getTitile() {
-        return title;
+    */
+    public String getUrl() {
+        return Url;
     }
 
-    public String getGradient() { return gradient; }
-
+    public String getTitle() {
+        return title;
+    }
+    /*
+    String getGradient() {
+        return gradient;
+    }
+    */
 }

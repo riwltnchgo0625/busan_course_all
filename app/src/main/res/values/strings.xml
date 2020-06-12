@@ -30,7 +30,10 @@
     <!-- Home -->
     <string name="HotSpot">부산 명소</string>
     <string name="HotSpot_content">부산에서만 만날 수 있는\n최상의 아름다움</string>
+
     <string name="PopularFood">부산에 왔으면 부산 음식은 먹어줘야지~</string>
+
+    <string name="FiveStarHotel">가성비 좋은 5성급 호텔 추천!</string>
 
     <string name="today">날짜</string>
 
@@ -38,8 +41,6 @@
     <string name="icon_Culture">문화/관광</string>
     <string name="icon_Traffic">대중교통</string>
     <string name="icon_Hospital">의료시설</string>
-
-    <string name="test">test</string>
 
     <!--로그인-->
     <string name="login">Login</string>
@@ -52,6 +53,8 @@
     <string name="prompt_start_date">여행 일자를 선택하세요</string>
     <string name="search_title">Cities</string>
     <string name="sample_state">Delhi</string>
+
+    <string name="test">test</string>
 
     <!-- Image Description -->
     <string name="EventImage">Event Icon</string>
@@ -73,7 +76,5 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
 
 </resources>
