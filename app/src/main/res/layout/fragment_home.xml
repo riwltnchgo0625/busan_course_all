@@ -164,6 +164,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
                         android:text="@string/icon_Food"
                         android:textAlignment="center" />
 
@@ -193,6 +194,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:text="@string/icon_Culture"
                         android:textAlignment="center" />
 
@@ -222,6 +224,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:text="@string/icon_Traffic"
                         android:textAlignment="center" />
 
@@ -251,6 +254,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:text="@string/icon_Hospital"
                         android:textAlignment="center" />
 
