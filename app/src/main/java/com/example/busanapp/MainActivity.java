@@ -29,6 +29,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         handler.removeCallbacks(runnable);
         super.onDestroy();
-
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".calendar.memo.MemoActivity">
+    tools:context=".calendar.MemoActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/memo_toolbar"
@@ -18,11 +18,14 @@
         android:id="@+id/Title_Edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
-        android:gravity="start"
-        android:hint="제목을 입력하세요..."
-        android:inputType="textPersonName" />
+        android:autofillHints="@string/prompt_title"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="@font/custom_font"
+        android:hint="@string/prompt_title"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@color/MainColor" />
 
     <ScrollView
         android:id="@+id/EditScroll"
@@ -32,12 +35,15 @@
         <EditText
             android:id="@+id/Content_Edit"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#00FFFFFF"
+            android:autofillHints="@string/prompt_content"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/abfont"
             android:gravity="start"
-            android:hint="여행 일정을 입력하세요..."
-            android:inputType="textMultiLine" />
+            android:hint="@string/prompt_content"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@color/MainColor" />
 
     </ScrollView>
 

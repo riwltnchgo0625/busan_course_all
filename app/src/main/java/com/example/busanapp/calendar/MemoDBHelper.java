@@ -1,4 +1,4 @@
-package com.example.busanapp.calendar.memo;
+package com.example.busanapp.calendar;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,8 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class MemoDBHelper extends SQLiteOpenHelper {
-    private static MemoDBHelper sInstance; // 싱글턴 인스턴스 선언
-
+    private static MemoDBHelper sInstance;
     private static final int DB_VERSION = 1;
     private static final String DB_NAME = "Memo.db";
     private static final String SQL_CREATE_ENTRIES =
@@ -22,9 +21,8 @@ public class MemoDBHelper extends SQLiteOpenHelper {
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + MemoContract.MemoEntry.TABLE_NAME;
 
-    public static MemoDBHelper getInstance(Context context) {
+    static MemoDBHelper getInstance(Context context) {
         if (sInstance == null) {
-            // 인스턴스가 없으면 생성
             sInstance = new MemoDBHelper(context);
         }
         return sInstance;
@@ -43,9 +41,5 @@ public class MemoDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(SQL_DELETE_ENTRIES);
         onCreate(db);
-    }
-
-    public void DropTable(SQLiteDatabase db) {
-        db.delete(MemoContract.MemoEntry.TABLE_NAME, null, null);
     }
 }

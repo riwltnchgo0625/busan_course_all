@@ -54,6 +54,11 @@
     <string name="search_title">Cities</string>
     <string name="sample_state">Delhi</string>
 
+    <string name="prompt_title">제목을 입력하세요</string>
+    <string name="prompt_content">내용을 입력하세요</string>
+
+    <string name="calendar_date">YYYY/MM/DD</string>
+
     <string name="test">test</string>
 
     <string name="CourseTitle">Course Title</string>

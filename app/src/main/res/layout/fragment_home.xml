@@ -20,7 +20,7 @@
             android:layout_centerVertical="true"
             android:contentDescription="@string/LoginImage"
             android:padding="5dp"
-            android:src="@drawable/ic_add_black_24dp" />
+            android:src="@drawable/ic_add" />
 
     </RelativeLayout>
 
