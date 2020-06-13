@@ -49,7 +49,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class HomeFragment extends Fragment {
-    private RecyclerView mostViewdRecycler, categoriesRecycler;
+    private RecyclerView mostViewedRecycler, categoriesRecycler;
 //  private TextView tv_name;
 //  private Context mContext;
 
@@ -75,6 +75,7 @@ public class HomeFragment extends Fragment {
         t4_data = view.findViewById(R.id.weather_date);
         imageView = view.findViewById(R.id.weather_image);
         final LocationManager lm = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+
         if (Build.VERSION.SDK_INT >= 23 &&
                 ContextCompat.checkSelfPermission(getActivity().getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(getActivity(), new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
@@ -118,8 +119,10 @@ public class HomeFragment extends Fragment {
         find_weather();
 
         RecyclerView featuredRecycler = view.findViewById(R.id.featured_recycler);
-        mostViewdRecycler = view.findViewById(R.id.Most_recycler);
+
+        mostViewedRecycler = view.findViewById(R.id.Most_recycler);
         mostViewedRecycler();
+
         categoriesRecycler = view.findViewById(R.id.categories_recycler);
         categoriesRecycler();
 
@@ -136,10 +139,14 @@ public class HomeFragment extends Fragment {
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedHelperClass("https://cdn.pixabay.com/photo/2018/06/15/12/47/busan-3476918_960_720.jpg",
-                "감천문화마을", "부산광역시 사하구 감천2동 감내1로 200"));
         featuredLocations.add(new FeaturedHelperClass("https://cdn.pixabay.com/photo/2018/07/15/04/19/gwangalli-3538913_960_720.jpg",
                 "광안리 해수욕장", "부산광역시 수영구 광안2동"));
+        featuredLocations.add(new FeaturedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191229153531987_oen",
+                "해운대 해수욕장", "부산광역시 해운대구 해운대해변로 264"));
+        featuredLocations.add(new FeaturedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191222180842708_wufrotr",
+                "태종대", "부산광역시 영도구 동삼동 전망로 24"));
+        featuredLocations.add(new FeaturedHelperClass("https://cdn.pixabay.com/photo/2018/06/15/12/47/busan-3476918_960_720.jpg",
+                "감천문화마을", "부산광역시 사하구 감천2동 감내1로 200"));
         featuredLocations.add(new FeaturedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191230184115413_oen",
                 "국제시장", "부산광역시 중구 신창동4가"));
 
@@ -215,45 +222,48 @@ public class HomeFragment extends Fragment {
     }
 
     private void mostViewedRecycler() {
-        mostViewdRecycler.setHasFixedSize(true);
-        mostViewdRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+        mostViewedRecycler.setHasFixedSize(true);
+        mostViewedRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
+
+        mostViewedLocations.add(new MostViewedHelperClass("https://cdn.pixabay.com/photo/2018/09/10/09/21/haejangguk-3666599_960_720.jpg",
+                "돼지국밥", "부산 돼지국밥을 빼고 국밥을 논하지 마라.(궁서체)"));
         mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191226181410757_wufrotr",
                 "밀면", "묘하게 중독되는 부산 여름의 맛!"));
         mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200102184731969_oen",
                 "회", "마! 부산은 회 아이가~"));
         mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191230195412058_oen",
-                "동래파전", "과거 임금님이 드셨다는 음식인데 안 먹어볼 수 없지"));
-        mostViewedLocations.add(new MostViewedHelperClass("https://cdn.pixabay.com/photo/2018/09/10/09/21/haejangguk-3666599_960_720.jpg",
-                "돼지국밥", "부산 돼지국밥을 빼고 국밥을 논하지 마라.(진지)"));
+                "동래파전", "파전은 늘 옳다."));
+        mostViewedLocations.add(new MostViewedHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20191227100120502_wufrotr",
+                "씨앗호떡", "부산이 씨앗호떡 원조라면서요?"));
 
         RecyclerView.Adapter adapter = new MostViewedAdapter(mostViewedLocations);
-        mostViewdRecycler.setAdapter(adapter);
+        mostViewedRecycler.setAdapter(adapter);
     }
 
     private void categoriesRecycler() {
-        //All Gradients
-        GradientDrawable gradient2 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffd4cbe5, 0xffd4cbe5});
-        GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xff7adccf, 0xff7adccf});
-        GradientDrawable gradient3 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xfff7c59f, 0xFFf7c59f});
-        GradientDrawable gradient4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffb8d7f5, 0xffb8d7f5});
+        // All Gradients
+//      GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xff7adccf, 0xff7adccf});
+//      GradientDrawable gradient2 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffd4cbe5, 0xffd4cbe5});
+//      GradientDrawable gradient3 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xfff7c59f, 0xFFf7c59f});
+//      GradientDrawable gradient4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffb8d7f5, 0xffb8d7f5});
 
         ArrayList<CategoriesHelperClass> categoriesHelperClasses = new ArrayList<>();
-        categoriesHelperClasses.add(new CategoriesHelperClass("https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/07/10/1653/Park-Hyatt-Busan-P822-Ocean-View-King-High-Floor.jpg/Park-Hyatt-Busan-P822-Ocean-View-King-High-Floor.16x9.jpg?imwidth=1280",
-                "파크하얏트 부산(해운대)"));
-        categoriesHelperClasses.add(new CategoriesHelperClass("https://hilton.co.kr/static/upload/hotel_main_20171025171832_lg_pc.jpg",
-                "힐튼 부산 호텔"));
-        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.busanparadisehotel.co.kr/upload/201904/1554963881483.jpg",
-                "파라다이스 호텔 부산(해운대)"));
-        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.lottehotel.com/content/dam/lotte-hotel/lotte/busan/accommodation/standard/deluxe-room/180829-3-2000-acc-busan-hotel.jpg.thumb.1024.1024.jpg",
-                "롯데호텔 부산(서면)"));
-        categoriesHelperClasses.add(new CategoriesHelperClass("https://twcb.echosunhotel.com/revolution/content/fileImage.do?fileId=19303",
-                "부산 웨스틴조선호텔(해운대)"));
 
         categoriesRecycler.setHasFixedSize(true);
-        RecyclerView.Adapter adapter = new CategoriesAdapter(categoriesHelperClasses);
         categoriesRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200110132712927_ttiel",
+                "#중구지역\n#서구지역\n#동구지역\n#남구지역"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200110133650886_ttiel",
+                "#영도구지역\n#부산진구지역\n#해운대지역"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200110153816890_ttiel",
+                "#동래구지역\n#북구지역\n#사상구지역\n#기장군지역"));
+        categoriesHelperClasses.add(new CategoriesHelperClass("https://www.visitbusan.net/uploadImgs/files/cntnts/20200110154437547_ttiel",
+                "#사하구지역\n#금정구지역\n#강서구지역\n#연제구지역\n#수영구지역"));
+
+        RecyclerView.Adapter adapter = new CategoriesAdapter(categoriesHelperClasses);
         categoriesRecycler.setAdapter(adapter);
     }
 

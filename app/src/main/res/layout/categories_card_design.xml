@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="250dp"
+    android:layout_width="280dp"
     android:layout_height="150dp"
-    android:layout_margin="12sp"
-    app:cardCornerRadius="0dp"
+    android:layout_margin="10sp"
+    app:cardCornerRadius="2dp"
     app:cardElevation="8dp">
 
     <RelativeLayout
         android:id="@+id/background_gradient"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D1C4E9"
-        android:padding="15dp">
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/categories_image"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/test"
+            android:scaleType="centerCrop"
+            android:src="@android:color/darker_gray" />
 
         <TextView
             android:id="@+id/categories_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/categories_image"
+            android:lineSpacingExtra="5dp"
             android:text="@android:string/untitled"
             android:textSize="20sp" />
-
-        <ImageView
-            android:id="@+id/categories_image"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:src="@android:color/darker_gray"
-            android:contentDescription="@string/test" />
 
     </RelativeLayout>
 

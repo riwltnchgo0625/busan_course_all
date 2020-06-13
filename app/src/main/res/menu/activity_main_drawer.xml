@@ -28,7 +28,7 @@
         </menu>
     </item>
 
-    <item android:title="@string/calendar">
+    <item android:title="@string/menu_calendar">
         <menu>
             <item
                 android:id="@+id/nav_calendar"

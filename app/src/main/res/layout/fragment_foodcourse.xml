@@ -20,7 +20,8 @@
                 android:id="@+id/coursethumbnail"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -28,8 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Course Title"
-                android:textColor="#000000"
+                android:text="@string/CourseTitle"
+                android:textColor="@android:color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -40,23 +41,25 @@
                 android:layout_marginTop="10dp"
                 android:background="#edecec"
                 android:padding="8dp"
-                android:text="Category"
-                android:textColor="#000000" />
+                android:text="@string/Category"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:id="@+id/tvdescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail2"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -64,15 +67,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail3"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -80,15 +85,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail4"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -96,15 +103,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail5"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -112,15 +121,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail6"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -128,15 +139,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/coursethumbnail7"
                 android:layout_width="377dp"
                 android:layout_height="170dp"
-                android:background="#2d2d2d"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/FoodCourseImage"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -144,10 +157,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Description2"
-                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/Description"
+                android:textColor="@android:color/black"
                 android:textSize="18sp" />
-
 
         </LinearLayout>
 

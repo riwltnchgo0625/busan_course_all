@@ -28,14 +28,14 @@
     <string name="home_second">Home Second</string>
 
     <!-- Home -->
-    <string name="HotSpot">부산 명소</string>
-    <string name="HotSpot_content">부산에서만 만날 수 있는\n최상의 아름다움</string>
-
-    <string name="PopularFood">부산에 왔으면 부산 음식은 먹어줘야지~</string>
-
-    <string name="FiveStarHotel">가성비 좋은 5성급 호텔 추천!</string>
+    <string name="Featured">부산 경치 보고 가실게요~</string>
+    <string name="MostViewed">부산에 왔으면 부산 음식은 먹어줘야지~</string>
+    <string name="Categories">부산에서 35곳의 낭만카페를 즐겨보세요!</string>
 
     <string name="today">날짜</string>
+    <string name="celsius">°C</string>
+    <string name="temperature_number">00.00</string>
+    <string name="WeatherImage">Weather Icon</string>
 
     <string name="icon_Food">음식점\n카페</string>
     <string name="icon_Culture">문화/관광</string>
@@ -56,11 +56,20 @@
 
     <string name="test">test</string>
 
+    <string name="CourseTitle">Course Title</string>
+    <string name="Category">Category</string>
+    <string name="Description">Description</string>
+
     <!-- Image Description -->
     <string name="EventImage">Event Icon</string>
     <string name="LocationImage">Location Icon</string>
     <string name="LoginImage">Login Icon</string>
     <string name="FoodImage">Food Icon</string>
+    <string name="CultureImage">Culture Icon</string>
+    <string name="PublicTrafficImage">PublicTraffic Image</string>
+    <string name="HospitalImage">Hospital Icon</string>
+
+    <string name="FoodCourseImage">Food Image</string>
 
     <!-- Button Text -->
     <string name="prompt_add_trip">저장</string>
