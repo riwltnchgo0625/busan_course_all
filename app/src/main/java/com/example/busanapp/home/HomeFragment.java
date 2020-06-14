@@ -30,7 +30,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.busanapp.Common.LoginSignup.RetailerStartUpScreen;
+
 import com.example.busanapp.HelperClasses.Home.CategoriesAdapter;
 import com.example.busanapp.HelperClasses.Home.CategoriesHelperClass;
 import com.example.busanapp.HelperClasses.Home.FeaturedAdapter;
@@ -126,13 +126,6 @@ public class HomeFragment extends Fragment {
         categoriesRecycler = view.findViewById(R.id.categories_recycler);
         categoriesRecycler();
 
-        ImageView imageView = view.findViewById(R.id.login_image_button);
-        imageView.setOnClickListener(v -> {
-            if (v.getId() == R.id.login_image_button) {
-                Intent j = new Intent(getActivity().getApplicationContext(), RetailerStartUpScreen.class);
-                startActivity(j);
-            }
-        });
 
         featuredRecycler.setHasFixedSize(true);
         featuredRecycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
@@ -217,9 +210,6 @@ public class HomeFragment extends Fragment {
         queue.add(jor);
     }
 
-    public void callRetailerScreens(View view) {
-        getActivity().startActivity(new Intent(getActivity().getApplicationContext(), RetailerStartUpScreen.class));
-    }
 
     private void mostViewedRecycler() {
         mostViewedRecycler.setHasFixedSize(true);
