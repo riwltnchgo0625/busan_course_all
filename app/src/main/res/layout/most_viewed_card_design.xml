@@ -29,6 +29,7 @@
             android:layout_toEndOf="@+id/mv_image"
             android:lineHeight="20dp"
             android:text="@android:string/untitled"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
         <!--
         <RatingBar
