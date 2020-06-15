@@ -3,6 +3,8 @@ package com.example.busanapp.ui.home;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -31,6 +33,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -254,18 +258,26 @@ public class EatFragment extends Fragment implements OnMapReadyCallback {
                     String name=name_list.get(i);
                     String vicinity=vicinity_list.get(i);
                     // 생성할 마커의 정보를 가지고 있는 객체를 생성
-                    MarkerOptions options=new MarkerOptions();
+                    MarkerOptions markerOptions=new MarkerOptions();
                     // 위치설정
                     LatLng pos=new LatLng(lat,lng);
-                    options.position(pos);
+                    markerOptions.position(pos);
                     // 말풍선이 표시될 값 설정
-                    options.title(name);
-                    options.snippet(vicinity);
+                    markerOptions.title(name);
+                    markerOptions.snippet(vicinity);
                     // 아이콘 설정
-                    //BitmapDescriptor icon= BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher);
-                    //options.icon(icon);
+                    BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.marker1_green);
+                    Bitmap b=bitmapdraw.getBitmap();
+                    Bitmap smallMarker = Bitmap.createScaledBitmap(b, 80, 110, false);
+                    markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+
+                  /*  BitmapDescriptor bitmapdraw= (BitmapDrawable)getResources().getDrawable(R.drawable.marker1_green);
+                    Bitmap b= bitmapdraw.getBitmap();
+                    Bitmap smallmarker = Bitmap.createBitmap(b,100,100,false);
+                    options.icon(BitmapDescriptorFactory.fromBitmap(smallmarker));*/
+
                     // 마커를 지도에 표시한다.
-                    Marker marker=map.addMarker(options);
+                    Marker marker=map.addMarker(markerOptions);
                     markers_list.add(marker);
                 }
             }

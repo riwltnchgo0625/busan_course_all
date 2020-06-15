@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--썸네일-->
+            <ImageView
+                android:id="@+id/coursethumbnail1"
+                android:layout_width="392dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <!--제목-->
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Course Title"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--카테고리-->
+            <TextView
+                android:id="@+id/tvcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:background="#edecec"
+                android:padding="8dp"
+                android:text="Category" />
+
+            <!--1 : 추천코스-->
+            <TextView
+                android:id="@+id/tvdescription1"
+                android:background="#FFC107"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description1"
+                android:textSize="18sp" />
+
+            <!--1 : 추천코스 설명-->
+            <TextView
+                android:id="@+id/tvdescription2"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description2"
+                android:textSize="18sp" />
+
+            <!--2 : 영도대교 // 태종대-->
+            <ImageView
+                android:id="@+id/coursethumbnail2"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription3"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description3"
+                android:textSize="18sp" />
+
+            <!--3 :절영해안산책로 // 송도해수욕장-->
+            <ImageView
+                android:id="@+id/coursethumbnail3"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription4"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description4"
+                android:textSize="18sp" />
+
+            <!-- 4 : 태종대 // 감천문화마을-->
+            <ImageView
+                android:id="@+id/coursethumbnail4"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription5"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description5"
+                android:textSize="18sp" />
+
+            <!--5 : 국제시장 // 국제시장, 깡통시장-->
+            <ImageView
+                android:id="@+id/coursethumbnail5"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription6"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description6"
+                android:textSize="18sp" />
+
+            <!--6 : 용두산 공원 // 부산타워-->
+            <ImageView
+                android:id="@+id/coursethumbnail6"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription7"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description7"
+                android:textSize="18sp" />
+
+            <!--7 : 해운대 // 광안리 -->
+            <ImageView
+                android:id="@+id/coursethumbnail7"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription8"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description8"
+                android:textSize="18sp" />
+
+            <!--8 : 아쿠아리움 // 동백해안산책로-->
+            <ImageView
+                android:id="@+id/coursethumbnail8"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription9"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description9"
+                android:textSize="18sp" />
+
+            <!--9 : 동백섬 산책로 // 해월정-->
+            <ImageView
+                android:id="@+id/coursethumbnail9"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription10"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description10"
+                android:textSize="18sp" />
+
+            <!--10 : 오륙도 // 송정해수욕장-->
+            <ImageView
+                android:id="@+id/coursethumbnail10"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription11"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description11"
+                android:textSize="18sp" />
+
+            <!--11 : 이기대 해안산책로 // 기도도량-->
+            <ImageView
+                android:id="@+id/coursethumbnail11"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription12"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description12"
+                android:textSize="18sp" />
+
+            <!--12 : 코스 추천 // 코스 추천-->
+            <ImageView
+                android:id="@+id/coursethumbnail12"
+                android:layout_width="377dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvdescription13"
+                android:background="#FDA0A0"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description13"
+                android:textSize="18sp" />
+
+            <!--15 : 추천코스 소개 // 추천코스 소개-->
+            <TextView
+                android:id="@+id/tvdescription14"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description14"
+                android:textSize="18sp" />
+
+
+            <!--14 : 클로징-->
+            <TextView
+                android:id="@+id/tvdescription15"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description15"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

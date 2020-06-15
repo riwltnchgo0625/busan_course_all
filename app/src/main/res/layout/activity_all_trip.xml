@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#ECECEC"
+    tools:context=".home.Course_Activity_all">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@color/green"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="당일치기 추천 코스" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="2dp"
+                android:id="@+id/recyclerview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:background="@color/green"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="1박2일 추천 코스" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="2dp"
+                android:id="@+id/recyclerview_onetwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:background="@color/green"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="2박3일 추천 코스" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="2dp"
+                android:id="@+id/recyclerview_onetwothree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -42,8 +42,7 @@ public class Course_two_three_trip {
                                  String description6
             , String description7,String description8
             , String description9,String description10
-            , String description11,
-                                 int thumbnail, int thumbnail2, int thumbnail3, int thumbnail4, int thumbnail5, int thumbnail6
+            , String description11,int thumbnail, int thumbnail2, int thumbnail3, int thumbnail4, int thumbnail5, int thumbnail6
             ,
                                  int thumbnail7, int thumbnail8
             ,

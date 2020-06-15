@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import com.example.busanapp.calendar.CalendarFragment;
 import com.example.busanapp.ui.home.CafeFragment;
 import com.example.busanapp.ui.home.ChecklistFragment;
+import com.example.busanapp.ui.home.Course_all_Fragment;
 import com.example.busanapp.ui.home.DaytripFragment;
 import com.example.busanapp.ui.home.EatFragment;
 import com.example.busanapp.home.HomeFragment;
@@ -93,26 +94,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                         new MedicalFragment()).commit();
                 break;
 
-            case R.id.nav_daytrip:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new DaytripFragment()).commit();
-                break;
-
-            case R.id.nav_two_three:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new TwoThreetripFragment()).commit();
-                break;
-
-            case R.id.nav_one_night_two_days:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new OneTwoFragment()).commit();
-                break;
-
-            case R.id.nav_food_course:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FoodCourseFragment()).commit();
-                break;
-
             case R.id.nav_cafe:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CafeFragment()).commit();
@@ -121,6 +102,11 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_checklist:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChecklistFragment()).commit();
+                break;
+
+            case R.id.nav_alltrip:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new Course_all_Fragment()).commit();
                 break;
 
             case R.id.nav_mytrip:

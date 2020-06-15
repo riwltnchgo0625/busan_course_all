@@ -65,29 +65,14 @@
     <item android:title="@string/menu_course">
         <menu>
             <item
-                android:id="@+id/nav_daytrip"
+                android:id="@+id/nav_alltrip"
                 android:icon="@drawable/ic_edit_location"
-                android:title="@string/menu_1dayTravel" />
-
-            <item
-                android:id="@+id/nav_one_night_two_days"
-                android:icon="@drawable/ic_edit_location"
-                android:title="@string/menu_2daysTravel" />
-
-            <item
-                android:id="@+id/nav_two_three"
-                android:icon="@drawable/ic_edit_location"
-                android:title="@string/menu_3daysTravel" />
-
-            <item
-                android:id="@+id/nav_food_course"
-                android:icon="@drawable/ic_edit_location"
-                android:title="@string/menu_food_course" />
+                android:title="추천코스 보기" />
 
             <item
                 android:id="@+id/nav_cafe"
                 android:icon="@drawable/ic_edit_location"
-                android:title="@string/menu_cafe" />
-        </menu>
+                android:title="추천 먹거리/카페" />
+       </menu>
     </item>
 </menu>
