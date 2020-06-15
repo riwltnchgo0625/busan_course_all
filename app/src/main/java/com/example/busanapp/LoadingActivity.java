@@ -15,6 +15,7 @@ import com.example.busanapp.calendar.CalendarFragment;
 import com.example.busanapp.ui.home.CafeFragment;
 import com.example.busanapp.ui.home.ChecklistFragment;
 import com.example.busanapp.ui.home.Course_all_Fragment;
+import com.example.busanapp.ui.home.Course_food_cafe_Fragment;
 import com.example.busanapp.ui.home.DaytripFragment;
 import com.example.busanapp.ui.home.EatFragment;
 import com.example.busanapp.home.HomeFragment;
@@ -94,10 +95,7 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                         new MedicalFragment()).commit();
                 break;
 
-            case R.id.nav_cafe:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new CafeFragment()).commit();
-                break;
+
 
             case R.id.nav_checklist:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -107,6 +105,10 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_alltrip:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Course_all_Fragment()).commit();
+                break;
+            case R.id.nav_cafe:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new Course_food_cafe_Fragment()).commit();
                 break;
 
             case R.id.nav_mytrip:

@@ -20,13 +20,13 @@ import com.example.busanapp.home.RecyclerViewAdapterFoodCourse;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Course_food_Fragment extends Fragment {
+public class Course_food_cafe_Fragment extends Fragment {
     List<Course_Food> Fcourse;
     List<Course_Cafe> Ccourse;
 
     RecyclerView cafecardview;
 
-    public Course_food_Fragment() {
+    public Course_food_cafe_Fragment() {
 
     }
 
@@ -132,14 +132,17 @@ public class Course_food_Fragment extends Fragment {
                 "", "", "", "",
                 R.drawable.snackcart_1, R.drawable.snackcart_2, R.drawable.snackcart_3, 0, 0, 0, 0));
 
-        RecyclerView myrv = view.findViewById(R.id.F_recyclerview_id);
+        cafecardview = view.findViewById(R.id.recycler_cafe);
+        cafecardview();
+
+        RecyclerView myrv = view.findViewById(R.id.recycler_food);
         RecyclerView.Adapter myAdapter = new RecyclerViewAdapterFoodCourse(getActivity(), Fcourse);
 
         // 가로 레이아웃
-        LinearLayoutManager verticalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
+        LinearLayoutManager horizontalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
 
         // 레이아웃 매니저 연결
-        myrv.setLayoutManager(verticalLayoutManager);
+        myrv.setLayoutManager(horizontalLayoutManager);
 
         myrv.setAdapter(myAdapter);
 
@@ -387,10 +390,10 @@ public class Course_food_Fragment extends Fragment {
         RecyclerView.Adapter myAdapter = new RecyclerViewAdapterCafe(getActivity(), Ccourse);
 
         // 가로 레이아웃
-        LinearLayoutManager verticalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
+        LinearLayoutManager horizontalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
 
         // 레이아웃 매니저 연결
-        cafecardview.setLayoutManager(verticalLayoutManager);
+        cafecardview.setLayoutManager(horizontalLayoutManager);
 
         cafecardview.setAdapter(myAdapter);
     }
